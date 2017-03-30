@@ -4,44 +4,58 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [System.Serializable]
-public struct TimeSlotData {
-    public string name;
-    public int duration;
-    public int startTime;
+public class TimeSlotData {
+    public int id = 0;
+    public int duration = 30;
+    public int startTime = 0;
 }
 
 public class TimeSlot : MonoBehaviour {
 
-    TimeSlotData data;
+    public TimeSlotData data;
     Text text;
     RectTransform rectTransform;
+    public bool printDurationWithTitle = true;
 
 	// Use this for initialization
 	void Start () {
         text = this.GetComponentInChildren<Text>();
         rectTransform = this.GetComponent<RectTransform>();
-        if (data.duration == 0)
-            SetDataFromRect();
+        if (data.startTime == 0) {
+            SetDurationFromRect();
+            SetStartFromRect();
+        }
 
-        UpdateText();
         UpdateSize();
         UpdatePos();
-	}
+        UpdateColor();
+        UpdateText();
+    }
 
-    void SetDataFromRect() {
-        data.name = text.text;
+    public void SetDurationFromRect() {
         data.duration = Mathf.RoundToInt(rectTransform.sizeDelta.y);
-        Debug.Log(rectTransform.localPosition);
+        UpdateText();
+    }
+    public void SetStartFromRect() {
         data.startTime = Mathf.RoundToInt(rectTransform.localPosition.y);
     }
 
-    public void UpdateText() {
-        text.text = "(" + data.duration.ToString() + ")" + " " + data.name;
-    }
-    public void UpdateSize() {
+    void UpdateSize() {
         rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, data.duration);
     }
-    public void UpdatePos() {
+    void UpdatePos() {
         rectTransform.localPosition = new Vector2(0, data.startTime);
+    }
+
+    void UpdateColor() {
+        this.GetComponentInChildren<Image>().color = EventManager.S.events[data.id].color ;
+        text.text = "(" + data.duration.ToString() + ")" + " " + EventManager.S.events[data.id].name;
+    }
+
+    void UpdateText() {
+        if (printDurationWithTitle)
+            text.text = "(" + data.duration.ToString() + ")" + " " + EventManager.S.events[data.id].name;
+        else
+            text.text = EventManager.S.events[data.id].name;
     }
 }

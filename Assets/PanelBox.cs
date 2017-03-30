@@ -9,7 +9,7 @@ public class PanelBox : Selectable {
     static float holdTime = .15f;
     static float moveThreshold = 10f;
     RectTransform rectTransform;
-    int resizeThreshold = 7;
+    int minSize = 10;
 
     protected override void Awake() {
         base.Awake();
@@ -35,13 +35,10 @@ public class PanelBox : Selectable {
             yield return null;
         }
         this.transform.SetSiblingIndex(-1);
-        float yOffset = InputManager.GetPosition().y - (this.transform.position.y - rectTransform.rect.size.y / 2f);
-        Debug.Log(yOffset);
-        Debug.Log(-rectTransform.rect.size.y / 2f + resizeThreshold);
-        if (yOffset < -rectTransform.rect.size.y / 2f + resizeThreshold)
-            StartCoroutine(ResizeThis(originalMousePos, true));
-        else if (yOffset > rectTransform.rect.size.y / 2f - resizeThreshold)
+        if (InputManager.GetPosition().x < rectTransform.position.x + rectTransform.rect.width / 3f)
             StartCoroutine(ResizeThis(originalMousePos, false));
+        else if (InputManager.GetPosition().x > rectTransform.position.x + rectTransform.rect.width * 2f / 3f)
+            StartCoroutine(ResizeThis(originalMousePos, true));
         else
             StartCoroutine(MoveThis(originalMousePos));
         yield return null;
@@ -64,12 +61,12 @@ public class PanelBox : Selectable {
         while (InputManager.IsHeld()) {
             Vector2 newSize = rectTransform.sizeDelta;
             if (downNotUp)
-                newSize.y = Mathf.Max(10, originalBoxHeight - (InputManager.GetPosition().y - originalMousePos.y));
+                newSize.y = Mathf.Max(minSize, originalBoxHeight - (InputManager.GetPosition().y - originalMousePos.y));
             else
-                newSize.y = Mathf.Max(10, originalBoxHeight + (InputManager.GetPosition().y - originalMousePos.y));
+                newSize.y = Mathf.Max(minSize, originalBoxHeight + (InputManager.GetPosition().y - originalMousePos.y));
             rectTransform.sizeDelta = newSize;
 
-            if (!downNotUp) {
+            if (!downNotUp && newSize.y != minSize) {
                 Vector3 newPosition = rectTransform.position;
                 newPosition.y = originalBoxPos + (InputManager.GetPosition().y - originalMousePos.y);
                 rectTransform.position = newPosition;
