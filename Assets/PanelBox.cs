@@ -33,6 +33,7 @@ public class PanelBox : Selectable {
             if (Vector2.Distance(originalMousePos, InputManager.GetPosition()) > moveThreshold) {
                 if (slidingPanel)
                     slidingPanel.StartSlide(originalMousePos.y);
+                yield break;
             }
             yield return null;
         }
@@ -65,9 +66,11 @@ public class PanelBox : Selectable {
             yield return null;
         }
         if (currentPanel == PanelManager.S.panelA)
-            Destroy(this.gameObject);
-        else
+            DestroyImmediate(this.gameObject);
+        else {
             this.transform.SetParent(PanelManager.S.panelB, true);
+            slidingPanel = this.transform.GetComponentInParent<SlidingPanel>();
+        }
         TimeManager.S.SaveDay();
     }
 

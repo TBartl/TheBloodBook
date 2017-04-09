@@ -27,9 +27,10 @@ public class TimeSlot : MonoBehaviour {
         if (data.startTime == 0) {
             SetFromRect();
         }
-
-        UpdateSize();
-        UpdatePos();
+        if (data.startTime != -1) {
+            UpdateSize();
+            UpdatePos();
+        }
         UpdateColor();
         UpdateText();
     }
