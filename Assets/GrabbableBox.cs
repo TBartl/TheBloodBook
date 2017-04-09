@@ -7,9 +7,13 @@ using UnityEngine.EventSystems;
 public class GrabbableBox : Selectable {
     public int id;
     static float holdTime = .15f;
+    RectTransform rectTransform;
+    TimeSlot timeSlot;
 
     protected override void Awake() {
         base.Awake();
+        rectTransform = this.GetComponent<RectTransform>();
+        timeSlot = this.GetComponent<TimeSlot>();
     }
 
     public override void OnPointerDown(PointerEventData eventData) {
@@ -25,7 +29,9 @@ public class GrabbableBox : Selectable {
             }
             yield return null;
         }
-        Debug.Log("Picked up " + EventManager.S.events[id].name);
+        GameObject newBox = GameObject.Instantiate(EventManager.S.eventBox, rectTransform.position, Quaternion.identity, rectTransform.parent);
+        PanelBox newPanelBox = newBox.GetComponent<PanelBox>();
+        newPanelBox.StartCoroutine(newPanelBox.MoveThis(originalMousePos));
+        newPanelBox.GetComponent<TimeSlot>().data.id = timeSlot.data.id;
     }
-
 }

@@ -12,6 +12,7 @@ public class EventManager : MonoBehaviour {
 
     public static EventManager S;
     public List<Event> events;
+    public GameObject eventBox;
 
     void Awake() {
         S = this;

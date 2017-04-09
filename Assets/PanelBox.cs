@@ -10,11 +10,13 @@ public class PanelBox : Selectable {
     static float moveThreshold = 10f;
     RectTransform rectTransform;
     int minSize = 10;
+    TimeSlot timeSlot;
 
     protected override void Awake() {
         base.Awake();
-        slidingPanel = this.transform.parent.parent.GetComponent<SlidingPanel>();
+        slidingPanel = this.transform.GetComponentInParent<SlidingPanel>();
         rectTransform = this.GetComponent<RectTransform>();
+        timeSlot = this.GetComponent<TimeSlot>();
     }
 
     public override void OnPointerDown(PointerEventData eventData) {
@@ -29,30 +31,52 @@ public class PanelBox : Selectable {
                 yield break;
             }
             if (Vector2.Distance(originalMousePos, InputManager.GetPosition()) > moveThreshold) {
-                slidingPanel.StartSlide(originalMousePos.y);
-                yield break;
+                if (slidingPanel)
+                    slidingPanel.StartSlide(originalMousePos.y);
             }
             yield return null;
         }
         this.transform.SetSiblingIndex(-1);
-        if (InputManager.GetPosition().x < rectTransform.position.x + rectTransform.rect.width / 3f)
+        if (InputManager.GetPosition().x < rectTransform.position.x - rectTransform.rect.width / 6f)
             StartCoroutine(ResizeThis(originalMousePos, false));
-        else if (InputManager.GetPosition().x > rectTransform.position.x + rectTransform.rect.width * 2f / 3f)
+        else if (InputManager.GetPosition().x > rectTransform.position.x + rectTransform.rect.width / 6f)
             StartCoroutine(ResizeThis(originalMousePos, true));
         else
             StartCoroutine(MoveThis(originalMousePos));
         yield return null;
     }
 
-    IEnumerator MoveThis(Vector2 originalMousePos) {
+    public IEnumerator MoveThis(Vector2 originalMousePos) {
+        
         float originalBoxPos = rectTransform.position.y;
+        RectTransform currentPanel = GetCurrentPanel();
         while (InputManager.IsHeld()) {
-            Vector3 newPosition = rectTransform.position;
+
+            Vector3 newPosition = rectTransform.position;   
             newPosition.y = originalBoxPos + InputManager.GetPosition().y  - originalMousePos.y;
+            newPosition.y = Mathf.Clamp(newPosition.y, currentPanel.position.y - currentPanel.sizeDelta.y + rectTransform.sizeDelta.y, currentPanel.position.y);
+            newPosition.x = currentPanel.position.x;
             rectTransform.position = newPosition;
+            rectTransform.localPosition = new Vector3(rectTransform.localPosition.x, Mathf.Round(rectTransform.localPosition.y / 5) * 5);
+            this.transform.SetParent(currentPanel, true);
+
+            currentPanel = GetCurrentPanel();
+            timeSlot.SetFromRect();
             yield return null;
         }
-        this.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+        if (currentPanel == PanelManager.S.panelA)
+            Destroy(this.gameObject);
+        else
+            this.transform.SetParent(PanelManager.S.panelB, true);
+        TimeManager.S.SaveDay();
+    }
+
+    RectTransform GetCurrentPanel() {
+        float distToA = Mathf.Abs(InputManager.GetPosition().x - PanelManager.S.panelA.position.x);
+        float distToB = Mathf.Abs(InputManager.GetPosition().x - PanelManager.S.panelB.position.x);
+        if (distToA < distToB)
+            return PanelManager.S.panelA;
+        return PanelManager.S.panelB;
     }
 
     IEnumerator ResizeThis(Vector2 originalMousePos, bool downNotUp) {
@@ -64,15 +88,20 @@ public class PanelBox : Selectable {
                 newSize.y = Mathf.Max(minSize, originalBoxHeight - (InputManager.GetPosition().y - originalMousePos.y));
             else
                 newSize.y = Mathf.Max(minSize, originalBoxHeight + (InputManager.GetPosition().y - originalMousePos.y));
+            newSize.y = Mathf.Round(newSize.y / 5) * 5;
             rectTransform.sizeDelta = newSize;
 
             if (!downNotUp && newSize.y != minSize) {
                 Vector3 newPosition = rectTransform.position;
                 newPosition.y = originalBoxPos + (InputManager.GetPosition().y - originalMousePos.y);
+                newPosition.y = Mathf.Round(newPosition.y / 5) * 5;
                 rectTransform.position = newPosition;
+                rectTransform.localPosition = new Vector3(rectTransform.localPosition.x, Mathf.Round(rectTransform.localPosition.y / 5) * 5);
             }
+            timeSlot.SetFromRect();
             yield return null;
         }
+        TimeManager.S.SaveDay();
     }
 
 }

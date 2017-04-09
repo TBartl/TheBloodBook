@@ -13,17 +13,19 @@ public class TimeSlotData {
 public class TimeSlot : MonoBehaviour {
 
     public TimeSlotData data;
-    Text text;
+    Text[] text;
     RectTransform rectTransform;
     public bool printDurationWithTitle = true;
 
+    void Awake() {
+        text = this.GetComponentsInChildren<Text>();
+        rectTransform = this.GetComponent<RectTransform>();
+    }
+
 	// Use this for initialization
 	void Start () {
-        text = this.GetComponentInChildren<Text>();
-        rectTransform = this.GetComponent<RectTransform>();
         if (data.startTime == 0) {
-            SetDurationFromRect();
-            SetStartFromRect();
+            SetFromRect();
         }
 
         UpdateSize();
@@ -32,30 +34,33 @@ public class TimeSlot : MonoBehaviour {
         UpdateText();
     }
 
-    public void SetDurationFromRect() {
+    public void SetFromRect() {
         data.duration = Mathf.RoundToInt(rectTransform.sizeDelta.y);
         UpdateText();
-    }
-    public void SetStartFromRect() {
-        data.startTime = Mathf.RoundToInt(rectTransform.localPosition.y);
+        data.startTime = -Mathf.RoundToInt(rectTransform.localPosition.y);
     }
 
     void UpdateSize() {
         rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, data.duration);
     }
     void UpdatePos() {
-        rectTransform.localPosition = new Vector2(0, data.startTime);
+        rectTransform.localPosition = new Vector2(0, -data.startTime);
     }
 
     void UpdateColor() {
         this.GetComponentInChildren<Image>().color = EventManager.S.events[data.id].color ;
-        text.text = "(" + data.duration.ToString() + ")" + " " + EventManager.S.events[data.id].name;
     }
 
     void UpdateText() {
-        if (printDurationWithTitle)
-            text.text = "(" + data.duration.ToString() + ")" + " " + EventManager.S.events[data.id].name;
+        if (printDurationWithTitle) {
+            //text[0].text = "(" + data.duration.ToString() + ")" + " " + EventManager.S.events[data.id].name;
+            text[0].text = EventManager.S.events[data.id].name + " (" + data.duration.ToString() + ")";
+            int hour = data.startTime / 60 + 7;
+            int minute = data.startTime % 60;
+            text[1].text = Utilities.GetFormattedTime(hour, minute);
+        }
         else
-            text.text = EventManager.S.events[data.id].name;
+            text[0].text = EventManager.S.events[data.id].name;
     }
+    
 }

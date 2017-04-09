@@ -67,6 +67,7 @@ public class SlidingPanel : Selectable {
             }   
             yield return null;
         }
+        this.transform.position = new Vector3(transform.position.x, Mathf.Round(transform.position.y), 0);
     }
 
     void ClampOnPosition(float y) {
