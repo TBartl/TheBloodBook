@@ -132,7 +132,7 @@ public class Avian : MonoBehaviour {
             s += "on that day, ";
         else
             s += "today, ";
-        s += ", totalling " + ColorStartOrange() + ToHours(lengthToday) + " hours" + ColorEnd() + ". ";
+        s += "totalling " + ColorStartOrange() + ToHours(lengthToday) + " hours" + ColorEnd() + ". ";
 
         if (selectedDay.Date <= DateTime.Now.Date)
             s += "The day before you had ";
@@ -166,7 +166,7 @@ public class Avian : MonoBehaviour {
             if (r == 0)
                 animator.AnimateOutSpeech(new AvianSpeech("?", idle));
             else if (r == 1)
-                animator.AnimateOutSpeech(new AvianSpeech("                                                            ", grinny));
+                animator.AnimateOutSpeech(new AvianSpeech("                                                                                                                                              ", grinny));
             else
                 animator.AnimateOutSpeech(new AvianSpeech("...", serious));
         }

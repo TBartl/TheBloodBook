@@ -27,7 +27,7 @@ public class AvianAnimator : MonoBehaviour {
     float frameTime = .10f;
     float characterTime = .015f;
     float spaceCharacterTime = .025f;
-    float endTextWaitTime = 1.5f;
+    float endTextWaitTime = .75f;
     public AvianAnimation currentAnimation;
     Coroutine updateFrames;
 
