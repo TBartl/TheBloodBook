@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: 4215a5a0d1307eb409ef5f5a26a95e2f
+timeCreated: 1492731881
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AVIAN_7_silly_0
+    21300002: AVIAN_7_silly_1
+    21300004: AVIAN_7_silly_2
+    21300006: AVIAN_7_silly_3
+    21300008: AVIAN_7_silly_4
+    21300010: AVIAN_7_silly_5
+    21300012: AVIAN_7_silly_6
+    21300014: AVIAN_7_silly_7
+    21300016: AVIAN_7_silly_8
+    21300018: AVIAN_7_silly_9
+    21300020: AVIAN_7_silly_10
+    21300022: AVIAN_7_silly_11
+    21300024: AVIAN_7_silly_12
+    21300026: AVIAN_7_silly_13
+    21300028: AVIAN_7_silly_14
+    21300030: AVIAN_7_silly_15
+    21300032: AVIAN_7_silly_16
+    21300034: AVIAN_7_silly_17
+    21300036: AVIAN_7_silly_18
+    21300038: AVIAN_7_silly_19
+    21300040: AVIAN_7_silly_20
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AVIAN_7_silly_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_2
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_4
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_5
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_6
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_7
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_8
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_9
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_10
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_11
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_12
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_13
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_14
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_15
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_16
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_17
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_18
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_19
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_7_silly_20
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,30 +1,33 @@
 fileFormatVersion: 2
-guid: 37ee9f5a97953334e98122e2a7f12af9
-timeCreated: 1490029554
+guid: b52c78584ff9c31419def6928fdddf1c
+timeCreated: 1492731100
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: AVIAN_Idle_0
-    21300002: AVIAN_Idle_1
-    21300004: AVIAN_Idle_2
-    21300006: AVIAN_Idle_3
-    21300008: AVIAN_Idle_4
-    21300010: AVIAN_Idle_5
-    21300012: AVIAN_Idle_6
-    21300014: AVIAN_Idle_7
-    21300016: AVIAN_Idle_8
-    21300018: AVIAN_Idle_9
-    21300020: AVIAN_Idle_10
-    21300022: AVIAN_Idle_11
-    21300024: AVIAN_Idle_12
-    21300026: AVIAN_Idle_13
-    21300028: AVIAN_Idle_14
-    21300030: AVIAN_Idle_15
-    21300032: AVIAN_Idle_16
-    21300034: AVIAN_Idle_17
-    21300036: AVIAN_Idle_18
-    21300038: AVIAN_Idle_19
-    21300040: AVIAN_Idle_20
+    21300000: AVIAN_11_wink_0
+    21300002: AVIAN_11_wink_1
+    21300004: AVIAN_11_wink_2
+    21300006: AVIAN_11_wink_3
+    21300008: AVIAN_11_wink_4
+    21300010: AVIAN_11_wink_5
+    21300012: AVIAN_11_wink_6
+    21300014: AVIAN_11_wink_7
+    21300016: AVIAN_11_wink_8
+    21300018: AVIAN_11_wink_9
+    21300020: AVIAN_11_wink_10
+    21300022: AVIAN_11_wink_11
+    21300024: AVIAN_11_wink_12
+    21300026: AVIAN_11_wink_13
+    21300028: AVIAN_11_wink_14
+    21300030: AVIAN_11_wink_15
+    21300032: AVIAN_11_wink_16
+    21300034: AVIAN_11_wink_17
+    21300036: AVIAN_11_wink_18
+    21300038: AVIAN_11_wink_19
+    21300040: AVIAN_11_wink_20
+    21300042: AVIAN_11_wink_21
+    21300044: AVIAN_11_wink_22
+    21300046: AVIAN_11_wink_23
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -48,7 +51,7 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
     wrapMode: 1
@@ -62,7 +65,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaUsage: 0
+  alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
@@ -99,7 +102,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AVIAN_Idle_0
+      name: AVIAN_11_wink_0
       rect:
         serializedVersion: 2
         x: 3
@@ -112,7 +115,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_1
+      name: AVIAN_11_wink_1
       rect:
         serializedVersion: 2
         x: 93
@@ -120,12 +123,12 @@ TextureImporter:
         width: 84
         height: 88
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_2
+      name: AVIAN_11_wink_2
       rect:
         serializedVersion: 2
         x: 183
@@ -133,12 +136,12 @@ TextureImporter:
         width: 84
         height: 88
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_3
+      name: AVIAN_11_wink_3
       rect:
         serializedVersion: 2
         x: 273
@@ -151,7 +154,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_4
+      name: AVIAN_11_wink_4
       rect:
         serializedVersion: 2
         x: 363
@@ -164,7 +167,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_5
+      name: AVIAN_11_wink_5
       rect:
         serializedVersion: 2
         x: 453
@@ -177,7 +180,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_6
+      name: AVIAN_11_wink_6
       rect:
         serializedVersion: 2
         x: 543
@@ -190,7 +193,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_7
+      name: AVIAN_11_wink_7
       rect:
         serializedVersion: 2
         x: 633
@@ -203,7 +206,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_8
+      name: AVIAN_11_wink_8
       rect:
         serializedVersion: 2
         x: 723
@@ -216,7 +219,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_9
+      name: AVIAN_11_wink_9
       rect:
         serializedVersion: 2
         x: 813
@@ -229,7 +232,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_10
+      name: AVIAN_11_wink_10
       rect:
         serializedVersion: 2
         x: 903
@@ -242,7 +245,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_11
+      name: AVIAN_11_wink_11
       rect:
         serializedVersion: 2
         x: 993
@@ -255,7 +258,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_12
+      name: AVIAN_11_wink_12
       rect:
         serializedVersion: 2
         x: 1083
@@ -268,7 +271,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_13
+      name: AVIAN_11_wink_13
       rect:
         serializedVersion: 2
         x: 1173
@@ -281,7 +284,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_14
+      name: AVIAN_11_wink_14
       rect:
         serializedVersion: 2
         x: 1263
@@ -294,7 +297,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_15
+      name: AVIAN_11_wink_15
       rect:
         serializedVersion: 2
         x: 1353
@@ -307,7 +310,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_16
+      name: AVIAN_11_wink_16
       rect:
         serializedVersion: 2
         x: 1443
@@ -320,7 +323,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_17
+      name: AVIAN_11_wink_17
       rect:
         serializedVersion: 2
         x: 1533
@@ -333,7 +336,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_18
+      name: AVIAN_11_wink_18
       rect:
         serializedVersion: 2
         x: 1623
@@ -346,7 +349,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_19
+      name: AVIAN_11_wink_19
       rect:
         serializedVersion: 2
         x: 1713
@@ -359,7 +362,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: AVIAN_Idle_20
+      name: AVIAN_11_wink_20
       rect:
         serializedVersion: 2
         x: 1803
@@ -368,6 +371,45 @@ TextureImporter:
         height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_11_wink_21
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_11_wink_22
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_11_wink_23
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

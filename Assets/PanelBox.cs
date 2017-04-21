@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class PanelBox : Selectable {
     SlidingPanel slidingPanel;
-    static float holdTime = .15f;
+    static float holdTime = .18f;
     static float moveThreshold = 10f;
     RectTransform rectTransform;
     int minSize = 10;
@@ -28,6 +28,7 @@ public class PanelBox : Selectable {
         Vector2 originalMousePos = InputManager.GetPosition();
         for (float t = 0; t < holdTime; t += Time.deltaTime) {
             if (!InputManager.IsHeld()) {
+                Avian.S.OnEventTapped(timeSlot.data.id);
                 yield break;
             }
             if (Vector2.Distance(originalMousePos, InputManager.GetPosition()) > moveThreshold) {
@@ -65,9 +66,10 @@ public class PanelBox : Selectable {
             timeSlot.SetFromRect();
             yield return null;
         }
-        if (currentPanel == PanelManager.S.panelA)
+        if (currentPanel == PanelManager.S.panelA) {
+            Avian.S.OnEventDeleted(timeSlot.data.id);
             DestroyImmediate(this.gameObject);
-        else {
+        } else {
             this.transform.SetParent(PanelManager.S.panelB, true);
             slidingPanel = this.transform.GetComponentInParent<SlidingPanel>();
         }

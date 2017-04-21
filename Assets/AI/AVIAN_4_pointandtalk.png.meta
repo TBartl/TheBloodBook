@@ -1,0 +1,693 @@
+fileFormatVersion: 2
+guid: 8008ac26333bad448828b5bba000da99
+timeCreated: 1492730861
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AVIAN_Idle_0
+    21300002: AVIAN_Idle_1
+    21300004: AVIAN_Idle_2
+    21300006: AVIAN_Idle_3
+    21300008: AVIAN_Idle_4
+    21300010: AVIAN_Idle_5
+    21300012: AVIAN_Idle_6
+    21300014: AVIAN_Idle_7
+    21300016: AVIAN_Idle_8
+    21300018: AVIAN_Idle_9
+    21300020: AVIAN_Idle_10
+    21300022: AVIAN_Idle_11
+    21300024: AVIAN_Idle_12
+    21300026: AVIAN_Idle_13
+    21300028: AVIAN_Idle_14
+    21300030: AVIAN_Idle_15
+    21300032: AVIAN_Idle_16
+    21300034: AVIAN_Idle_17
+    21300036: AVIAN_Idle_18
+    21300038: AVIAN_Idle_19
+    21300040: AVIAN_Idle_20
+    21300042: AVIAN_4_pointandtalk_0
+    21300044: AVIAN_4_pointandtalk_1
+    21300046: AVIAN_4_pointandtalk_2
+    21300048: AVIAN_4_pointandtalk_3
+    21300050: AVIAN_4_pointandtalk_4
+    21300052: AVIAN_4_pointandtalk_5
+    21300054: AVIAN_4_pointandtalk_6
+    21300056: AVIAN_4_pointandtalk_7
+    21300058: AVIAN_4_pointandtalk_8
+    21300060: AVIAN_4_pointandtalk_9
+    21300062: AVIAN_4_pointandtalk_10
+    21300064: AVIAN_4_pointandtalk_11
+    21300066: AVIAN_4_pointandtalk_12
+    21300068: AVIAN_4_pointandtalk_13
+    21300070: AVIAN_4_pointandtalk_14
+    21300072: AVIAN_4_pointandtalk_15
+    21300074: AVIAN_4_pointandtalk_16
+    21300076: AVIAN_4_pointandtalk_17
+    21300078: AVIAN_4_pointandtalk_18
+    21300080: AVIAN_4_pointandtalk_19
+    21300082: AVIAN_4_pointandtalk_20
+    21300084: AVIAN_4_pointandtalk_21
+    21300086: AVIAN_4_pointandtalk_22
+    21300088: AVIAN_4_pointandtalk_23
+    21300090: AVIAN_4_pointandtalk_24
+    21300092: AVIAN_4_pointandtalk_25
+    21300094: AVIAN_4_pointandtalk_26
+    21300096: AVIAN_4_pointandtalk_27
+    21300098: AVIAN_4_pointandtalk_28
+    21300100: AVIAN_4_pointandtalk_29
+    21300102: AVIAN_4_pointandtalk_30
+    21300104: AVIAN_4_pointandtalk_31
+    21300106: AVIAN_4_pointandtalk_32
+    21300108: AVIAN_4_pointandtalk_33
+    21300110: AVIAN_4_pointandtalk_34
+    21300112: AVIAN_4_pointandtalk_35
+    21300114: AVIAN_4_pointandtalk_36
+    21300116: AVIAN_4_pointandtalk_37
+    21300118: AVIAN_4_pointandtalk_38
+    21300120: AVIAN_4_pointandtalk_39
+    21300122: AVIAN_4_pointandtalk_40
+    21300124: AVIAN_4_pointandtalk_41
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 0
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_2
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_4
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_5
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_6
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_7
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_8
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_9
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_10
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_11
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_12
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_13
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_14
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_15
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_16
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_17
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_18
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_19
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_20
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_21
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_22
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_23
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_24
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_25
+      rect:
+        serializedVersion: 2
+        x: 2253
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_26
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_27
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_28
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_29
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_30
+      rect:
+        serializedVersion: 2
+        x: 2703
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_31
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_32
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_33
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_34
+      rect:
+        serializedVersion: 2
+        x: 3063
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_35
+      rect:
+        serializedVersion: 2
+        x: 3153
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_36
+      rect:
+        serializedVersion: 2
+        x: 3243
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_37
+      rect:
+        serializedVersion: 2
+        x: 3333
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_38
+      rect:
+        serializedVersion: 2
+        x: 3423
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_39
+      rect:
+        serializedVersion: 2
+        x: 3513
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_40
+      rect:
+        serializedVersion: 2
+        x: 3603
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_4_pointandtalk_41
+      rect:
+        serializedVersion: 2
+        x: 3693
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

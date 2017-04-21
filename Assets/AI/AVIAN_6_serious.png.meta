@@ -1,0 +1,1050 @@
+fileFormatVersion: 2
+guid: b9c2bf5cc1cda124ba493f4bf77fdb17
+timeCreated: 1492731825
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AVIAN_6_serious_0
+    21300002: AVIAN_6_serious_1
+    21300004: AVIAN_6_serious_2
+    21300006: AVIAN_6_serious_3
+    21300008: AVIAN_6_serious_4
+    21300010: AVIAN_6_serious_5
+    21300012: AVIAN_6_serious_6
+    21300014: AVIAN_6_serious_7
+    21300016: AVIAN_6_serious_8
+    21300018: AVIAN_6_serious_9
+    21300020: AVIAN_6_serious_10
+    21300022: AVIAN_6_serious_11
+    21300024: AVIAN_6_serious_12
+    21300026: AVIAN_6_serious_13
+    21300028: AVIAN_6_serious_14
+    21300030: AVIAN_6_serious_15
+    21300032: AVIAN_6_serious_16
+    21300034: AVIAN_6_serious_17
+    21300036: AVIAN_6_serious_18
+    21300038: AVIAN_6_serious_19
+    21300040: AVIAN_6_serious_20
+    21300042: AVIAN_6_serious_21
+    21300044: AVIAN_6_serious_22
+    21300046: AVIAN_6_serious_23
+    21300048: AVIAN_6_serious_24
+    21300050: AVIAN_6_serious_25
+    21300052: AVIAN_6_serious_26
+    21300054: AVIAN_6_serious_27
+    21300056: AVIAN_6_serious_28
+    21300058: AVIAN_6_serious_29
+    21300060: AVIAN_6_serious_30
+    21300062: AVIAN_6_serious_31
+    21300064: AVIAN_6_serious_32
+    21300066: AVIAN_6_serious_33
+    21300068: AVIAN_6_serious_34
+    21300070: AVIAN_6_serious_35
+    21300072: AVIAN_6_serious_36
+    21300074: AVIAN_6_serious_37
+    21300076: AVIAN_6_serious_38
+    21300078: AVIAN_6_serious_39
+    21300080: AVIAN_6_serious_40
+    21300082: AVIAN_6_serious_41
+    21300084: AVIAN_6_serious_42
+    21300086: AVIAN_6_serious_43
+    21300088: AVIAN_6_serious_44
+    21300090: AVIAN_6_serious_45
+    21300092: AVIAN_6_serious_46
+    21300094: AVIAN_6_serious_47
+    21300096: AVIAN_6_serious_48
+    21300098: AVIAN_6_serious_49
+    21300100: AVIAN_6_serious_50
+    21300102: AVIAN_6_serious_51
+    21300104: AVIAN_6_serious_52
+    21300106: AVIAN_6_serious_53
+    21300108: AVIAN_6_serious_54
+    21300110: AVIAN_6_serious_55
+    21300112: AVIAN_6_serious_56
+    21300114: AVIAN_6_serious_57
+    21300116: AVIAN_6_serious_58
+    21300118: AVIAN_6_serious_59
+    21300120: AVIAN_6_serious_60
+    21300122: AVIAN_6_serious_61
+    21300124: AVIAN_6_serious_62
+    21300126: AVIAN_6_serious_63
+    21300128: AVIAN_6_serious_64
+    21300130: AVIAN_6_serious_65
+    21300132: AVIAN_6_serious_66
+    21300134: AVIAN_6_serious_67
+    21300136: AVIAN_6_serious_68
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AVIAN_6_serious_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_2
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_4
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_5
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_6
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_7
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_8
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_9
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_10
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_11
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_12
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_13
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_14
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_15
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_16
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_17
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_18
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_19
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_20
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_21
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_22
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_23
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_24
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_25
+      rect:
+        serializedVersion: 2
+        x: 2253
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_26
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_27
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_28
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_29
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_30
+      rect:
+        serializedVersion: 2
+        x: 2703
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_31
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_32
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_33
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_34
+      rect:
+        serializedVersion: 2
+        x: 3063
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_35
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_36
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_37
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_38
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_39
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_40
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_41
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_42
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_43
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_44
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_45
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_46
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_47
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_48
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_49
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_50
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_51
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_52
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_53
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_54
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_55
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_56
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_57
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_58
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_59
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_60
+      rect:
+        serializedVersion: 2
+        x: 2253
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_61
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_62
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_63
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_64
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_65
+      rect:
+        serializedVersion: 2
+        x: 2703
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_66
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_67
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_6_serious_68
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

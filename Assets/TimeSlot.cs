@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [System.Serializable]
-public class TimeSlotData {
-    public int id = 0;
-    public int duration = 30;
-    public int startTime = 0;
+public struct TimeSlotData {
+    public int id;
+    public int duration;
+    public int startTime;
 }
 
 public class TimeSlot : MonoBehaviour {

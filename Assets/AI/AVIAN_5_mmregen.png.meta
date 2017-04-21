@@ -1,0 +1,1057 @@
+fileFormatVersion: 2
+guid: 5234e84acdf48a44bbcc763b40995785
+timeCreated: 1492730938
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AVIAN_Idle_0
+    21300002: AVIAN_Idle_1
+    21300004: AVIAN_Idle_2
+    21300006: AVIAN_Idle_3
+    21300008: AVIAN_Idle_4
+    21300010: AVIAN_Idle_5
+    21300012: AVIAN_Idle_6
+    21300014: AVIAN_Idle_7
+    21300016: AVIAN_Idle_8
+    21300018: AVIAN_Idle_9
+    21300020: AVIAN_Idle_10
+    21300022: AVIAN_Idle_11
+    21300024: AVIAN_Idle_12
+    21300026: AVIAN_Idle_13
+    21300028: AVIAN_Idle_14
+    21300030: AVIAN_Idle_15
+    21300032: AVIAN_Idle_16
+    21300034: AVIAN_Idle_17
+    21300036: AVIAN_Idle_18
+    21300038: AVIAN_Idle_19
+    21300040: AVIAN_Idle_20
+    21300042: AVIAN_5_mmregen_0
+    21300044: AVIAN_5_mmregen_1
+    21300046: AVIAN_5_mmregen_2
+    21300048: AVIAN_5_mmregen_3
+    21300050: AVIAN_5_mmregen_4
+    21300052: AVIAN_5_mmregen_5
+    21300054: AVIAN_5_mmregen_6
+    21300056: AVIAN_5_mmregen_7
+    21300058: AVIAN_5_mmregen_8
+    21300060: AVIAN_5_mmregen_9
+    21300062: AVIAN_5_mmregen_10
+    21300064: AVIAN_5_mmregen_11
+    21300066: AVIAN_5_mmregen_12
+    21300068: AVIAN_5_mmregen_13
+    21300070: AVIAN_5_mmregen_14
+    21300072: AVIAN_5_mmregen_15
+    21300074: AVIAN_5_mmregen_16
+    21300076: AVIAN_5_mmregen_17
+    21300078: AVIAN_5_mmregen_18
+    21300080: AVIAN_5_mmregen_19
+    21300082: AVIAN_5_mmregen_20
+    21300084: AVIAN_5_mmregen_21
+    21300086: AVIAN_5_mmregen_22
+    21300088: AVIAN_5_mmregen_23
+    21300090: AVIAN_5_mmregen_24
+    21300092: AVIAN_5_mmregen_25
+    21300094: AVIAN_5_mmregen_26
+    21300096: AVIAN_5_mmregen_27
+    21300098: AVIAN_5_mmregen_28
+    21300100: AVIAN_5_mmregen_29
+    21300102: AVIAN_5_mmregen_30
+    21300104: AVIAN_5_mmregen_31
+    21300106: AVIAN_5_mmregen_32
+    21300108: AVIAN_5_mmregen_33
+    21300110: AVIAN_5_mmregen_34
+    21300112: AVIAN_5_mmregen_35
+    21300114: AVIAN_5_mmregen_36
+    21300116: AVIAN_5_mmregen_37
+    21300118: AVIAN_5_mmregen_38
+    21300120: AVIAN_5_mmregen_39
+    21300122: AVIAN_5_mmregen_40
+    21300124: AVIAN_5_mmregen_41
+    21300126: AVIAN_5_mmregen_42
+    21300128: AVIAN_5_mmregen_43
+    21300130: AVIAN_5_mmregen_44
+    21300132: AVIAN_5_mmregen_45
+    21300134: AVIAN_5_mmregen_46
+    21300136: AVIAN_5_mmregen_47
+    21300138: AVIAN_5_mmregen_48
+    21300140: AVIAN_5_mmregen_49
+    21300142: AVIAN_5_mmregen_50
+    21300144: AVIAN_5_mmregen_51
+    21300146: AVIAN_5_mmregen_52
+    21300148: AVIAN_5_mmregen_53
+    21300150: AVIAN_5_mmregen_54
+    21300152: AVIAN_5_mmregen_55
+    21300154: AVIAN_5_mmregen_56
+    21300156: AVIAN_5_mmregen_57
+    21300158: AVIAN_5_mmregen_58
+    21300160: AVIAN_5_mmregen_59
+    21300162: AVIAN_5_mmregen_60
+    21300164: AVIAN_5_mmregen_61
+    21300166: AVIAN_5_mmregen_62
+    21300168: AVIAN_5_mmregen_63
+    21300170: AVIAN_5_mmregen_64
+    21300172: AVIAN_5_mmregen_65
+    21300174: AVIAN_5_mmregen_66
+    21300176: AVIAN_5_mmregen_67
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 0
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_2
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_4
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_5
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_6
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_7
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_8
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_9
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_10
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_11
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_12
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_13
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_14
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_15
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_16
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_17
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_18
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_19
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_20
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_21
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_22
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_23
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_24
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_25
+      rect:
+        serializedVersion: 2
+        x: 2253
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_26
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_27
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_28
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_29
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_30
+      rect:
+        serializedVersion: 2
+        x: 2703
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_31
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_32
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_33
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 97
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_34
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_35
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_36
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_37
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_38
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_39
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_40
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_41
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_42
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_43
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_44
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_45
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_46
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_47
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_48
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_49
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_50
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_51
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_52
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_53
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_54
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_55
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_56
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_57
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_58
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_59
+      rect:
+        serializedVersion: 2
+        x: 2253
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_60
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_61
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_62
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_63
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_64
+      rect:
+        serializedVersion: 2
+        x: 2703
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_65
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_66
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: AVIAN_5_mmregen_67
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 3
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

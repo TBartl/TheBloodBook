@@ -13,7 +13,9 @@ public class TimeManager : MonoBehaviour {
     public GameObject timeSlotBoxHolder;
     string[] months = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
 
-    public static string folder = "SaveData";
+    public static string folder;
+
+    public RectTransform arrow;
 
     DateTime selectedDay;
     DateTime lastRealTime;
@@ -21,8 +23,12 @@ public class TimeManager : MonoBehaviour {
     // Use this for initialization
     void Awake () {
         S = this;
+        if (!Directory.Exists(Application.persistentDataPath))
+            Directory.CreateDirectory(Application.persistentDataPath);
+        folder = Application.persistentDataPath + "/SaveData";
+        if (!Directory.Exists(folder))
+            Directory.CreateDirectory(folder);
         LoadDayAndPopulateBoxes(DateTime.Now);
-        UpdateClockTime();
     }
 
     void Update() {
@@ -33,34 +39,45 @@ public class TimeManager : MonoBehaviour {
     }
     void UpdateClockTime() {
         DateTime now = DateTime.Now;
-        bottomText.text = months[now.Month] + " " + now.Day + ", " + now.Year + " " + Utilities.GetFormattedTime(now.Hour, now.Minute);
+        bottomText.text = months[selectedDay.Month] + " " + selectedDay.Day + ", " + selectedDay.Year + " " + Utilities.GetFormattedTime(now.Hour, now.Minute);
+        if (selectedDay.Date == now.Date)
+            bottomText.color = Color.white;
+        else
+            bottomText.color = Color.gray;
+        arrow.localPosition = new Vector3(0, -((now.Hour - 7) * 60 + now.Minute), 0);
         lastRealTime = now;
-    }
-
-
-    
+    }    
 
     void LoadDayAndPopulateBoxes(DateTime when) {
-        //GameObject newBox = GameObject.Instantiate(EventManager.S.eventBox, timeSlotBoxHolder.transform.position, Quaternion.identity, timeSlotBoxHolder.transform);
-        //PanelBox newPanelBox = newBox.GetComponent<PanelBox>();
+        // Delete current
+        foreach (Transform child in timeSlotBoxHolder.transform) {
+            GameObject.Destroy(child.gameObject);
+        }
 
-        // Delete all current objects
-
-        //Check loaded
-        //   load from file
-        //   create new file from template
-
+        TimeSlotData[] timeSlotData = LoadDayTimeSlots(when);
+        foreach (TimeSlotData t in timeSlotData) {
+            GameObject newBox = GameObject.Instantiate(EventManager.S.eventBox, timeSlotBoxHolder.transform.position, Quaternion.identity, timeSlotBoxHolder.transform);
+            //PanelBox newPanelBox = newBox.GetComponent<PanelBox>();
+            TimeSlot tSlot = newBox.GetComponent<TimeSlot>();
+            tSlot.data = t;
+            
+        }
         selectedDay = when;
+        UpdateClockTime();
     }
+    public TimeSlotData[] LoadDayTimeSlots() {
+        return LoadDayTimeSlots(DateTime.Now);
+    }
+
 
     public TimeSlotData[] LoadDayTimeSlots(DateTime when) {
         string path = GetPath(when);
         if (!File.Exists(path)) {
             string templatePath = GetPathOfTemplate(when);
-            if (!File.Exists(templatePath))
-                return new TimeSlotData[0];
-            else
+            if (File.Exists(templatePath))
                 File.Copy(templatePath, path);
+            else
+                return new TimeSlotData[0];
         }
         string[] lines = File.ReadAllLines(path);
         int numEntries = int.Parse(lines[0]);
@@ -73,7 +90,7 @@ public class TimeManager : MonoBehaviour {
         return toReturn;
     }
 
-    public void SaveDay() {
+    public void SaveDay(bool toTemplate = false) {
         StringBuilder sb = new StringBuilder();
         TimeSlot[] timeSlots = timeSlotBoxHolder.GetComponentsInChildren<TimeSlot>();
         sb.Append(timeSlots.Length + "\n");
@@ -82,7 +99,10 @@ public class TimeManager : MonoBehaviour {
             sb.Append(t.data.startTime + "\n");
             sb.Append(t.data.duration + "\n");
         }
-        File.WriteAllText(GetPath(selectedDay), sb.ToString());
+        if (!toTemplate)
+            File.WriteAllText(GetPath(selectedDay), sb.ToString());
+        else
+            File.WriteAllText(GetPathOfTemplate(selectedDay), sb.ToString());
     }
 
     string GetPathOfTemplate(DateTime day) {
@@ -91,7 +111,42 @@ public class TimeManager : MonoBehaviour {
     }
 
     string GetPath(DateTime day) {
-        string path = folder + "/" + selectedDay.Month + "_" + selectedDay.Day + "_" + selectedDay.Year + ".txt";
+        string path = folder + "/" + day.Month + "_" + day.Day + "_" + day.Year + ".txt";
         return path;
+    }
+
+    public void ChangeDayToCurrent() {
+        Avian.S.OnSelectCurrentDay(selectedDay.Date == DateTime.Now.Date);
+        LoadDayAndPopulateBoxes(DateTime.Now);
+    }
+
+    public void ChangeDay(bool forward) {
+        DateTime newDay;
+        if (forward)
+            newDay = selectedDay.AddDays(1);
+        else
+            newDay = selectedDay.AddDays(-1);
+
+        if (newDay.Date == DateTime.Now.Date)
+            Avian.S.OnBackToCurrentDay();
+        else if (!forward)
+            Avian.S.OnBackDay();
+        else if (forward)
+            Avian.S.OnForwardDay();
+
+        LoadDayAndPopulateBoxes(newDay);
+    }
+
+    public DateTime GetSelectedDay() {
+        return selectedDay;
+    }
+
+    public void SaveCurrentTemplate() {
+        SaveDay(true);
+    }
+
+    public void ResetDayToTemplate() {
+        File.Delete(GetPath(selectedDay));
+        LoadDayAndPopulateBoxes(selectedDay);
     }
 }
