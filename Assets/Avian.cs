@@ -146,19 +146,27 @@ public class Avian : MonoBehaviour {
         animator.AnimateOutSpeech(new AvianSpeech(s, talk));
     }
     public void OnEventCreated(int id) {
-        //animator.AnimateOutSpeech(new AvianSpeech(s, talk));
+        string s = "New event created for " + IdToText(id) + ".";
+        animator.AnimateOutSpeech(new AvianSpeech(s, talk));
     }
     public void OnEventDeleted(int id) {
-        //animator.AnimateOutSpeech(new AvianSpeech(s, talk));
+        string s = IdToText(id) + " event deleted. Hey you're not procrastinating something, are you?";
+        animator.AnimateOutSpeech(new AvianSpeech(s, serious));
     }
     public void OnEventResized(int id, int change) {
-        //animator.AnimateOutSpeech(new AvianSpeech(s, talk));
+        if (change == 0)
+            animator.AnimateOutSpeech(new AvianSpeech("Congratulations, you managed to resize your " + IdToText(id) + " event the exact same duration.", fingertapping));
+        else if (change > 0)
+            animator.AnimateOutSpeech(new AvianSpeech(IdToText(id) + " event duraction increased, look at you Mr. Productive.", talk));
+        else
+            animator.AnimateOutSpeech(new AvianSpeech(IdToText(id) + " event duraction decreased. You're not slacking, are you?", serious));
     }
     public void OnEventMoved(int id, int change) {
         //animator.AnimateOutSpeech(new AvianSpeech(s, talk));
     }
     public void OnAvianTouched(bool withMasterTouch = false) {
         if (withMasterTouch) {
+            // Doesn't currently work
             animator.AnimateOutSpeech(new AvianSpeech("Uh, you can't master press me you know...", serious));
         }
         else {
@@ -190,9 +198,9 @@ public class Avian : MonoBehaviour {
         return "<color=#00ff00ff>";
     }
     public string ColorAny(Color color) {
-        float red = color.r * 255;
-        float green = color.g * 255;
-        float blue = color.b * 255;
+        int red = Mathf.FloorToInt(color.r * 255);
+        int green = Mathf.FloorToInt(color.g * 255);
+        int blue = Mathf.FloorToInt(color.b * 255);
 
         char a = GetHex(Mathf.FloorToInt(red / 16));
         char b = GetHex(Mathf.RoundToInt(red % 16));
@@ -208,7 +216,7 @@ public class Avian : MonoBehaviour {
         return alpha[i];
     }
     public string IdToText(int id) {
-        return ColorAny(EventManager.S.events[id].color) + EventManager.S.events[id].name + ColorEnd();
+        return ColorAny(EventManager.S.events[id].colorText) + EventManager.S.events[id].name + ColorEnd();
     }
 
     public string ColorEnd() {

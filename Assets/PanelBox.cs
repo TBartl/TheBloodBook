@@ -11,6 +11,7 @@ public class PanelBox : Selectable {
     RectTransform rectTransform;
     int minSize = 10;
     TimeSlot timeSlot;
+    bool firstPlace = true;
 
     protected override void Awake() {
         base.Awake();
@@ -49,11 +50,10 @@ public class PanelBox : Selectable {
     }
 
     public IEnumerator MoveThis(Vector2 originalMousePos) {
-        
+        int originalStartTime = timeSlot.data.startTime;
         float originalBoxPos = rectTransform.position.y;
         RectTransform currentPanel = GetCurrentPanel();
         while (InputManager.IsHeld()) {
-
             Vector3 newPosition = rectTransform.position;   
             newPosition.y = originalBoxPos + InputManager.GetPosition().y  - originalMousePos.y;
             newPosition.y = Mathf.Clamp(newPosition.y, currentPanel.position.y - currentPanel.sizeDelta.y + rectTransform.sizeDelta.y, currentPanel.position.y);
@@ -74,6 +74,12 @@ public class PanelBox : Selectable {
             slidingPanel = this.transform.GetComponentInParent<SlidingPanel>();
         }
         TimeManager.S.SaveDay();
+        if (firstPlace) {
+            Avian.S.OnEventCreated(timeSlot.data.id);
+            firstPlace = false;
+        }
+        else
+            Avian.S.OnEventMoved(timeSlot.data.id, timeSlot.data.startTime - originalStartTime);
     }
 
     RectTransform GetCurrentPanel() {
@@ -85,6 +91,7 @@ public class PanelBox : Selectable {
     }
 
     IEnumerator ResizeThis(Vector2 originalMousePos, bool downNotUp) {
+        int originalSize = timeSlot.data.duration;
         float originalBoxHeight = rectTransform.sizeDelta.y;
         float originalBoxPos = rectTransform.position.y;
         while (InputManager.IsHeld()) {
@@ -107,6 +114,7 @@ public class PanelBox : Selectable {
             yield return null;
         }
         TimeManager.S.SaveDay();
+        Avian.S.OnEventResized(timeSlot.data.id, timeSlot.data.duration - originalSize);
     }
 
 }

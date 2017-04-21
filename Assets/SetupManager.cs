@@ -10,5 +10,6 @@ public class SetupManager : MonoBehaviour {
         Screen.autorotateToLandscapeLeft = false;
         Screen.autorotateToLandscapeRight = false;
         Screen.autorotateToPortraitUpsideDown = false;
+        //Application.runInBackground = true;
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public struct Event {
     public Color color;
+    public Color colorText;
     public string name;
 }
 

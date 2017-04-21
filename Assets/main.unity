@@ -2027,28 +2027,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   events:
   - color: {r: 0.85490197, g: 0.25882354, b: 0.25882354, a: 1}
+    colorText: {r: 1, g: 0.30275232, b: 0.30275232, a: 1}
     name: Work
   - color: {r: 0.85490197, g: 0.51780933, b: 0.25882354, a: 1}
+    colorText: {r: 1, g: 0.60550463, b: 0.30275232, a: 1}
     name: Class
   - color: {r: 0.85490197, g: 0.8137465, b: 0.2581468, a: 1}
+    colorText: {r: 1, g: 0.95412856, b: 0.30275232, a: 1}
     name: CourseWork
   - color: {r: 0.5997377, g: 0.85490197, b: 0.2581468, a: 1}
+    colorText: {r: 0.7018349, g: 1, b: 0.30275232, a: 1}
     name: Social
   - color: {r: 0.2581468, g: 0.85490197, b: 0.5585821, a: 1}
+    colorText: {r: 0.30275232, g: 1, b: 0.6513761, a: 1}
     name: Exercise
   - color: {r: 0.2581468, g: 0.85490197, b: 0.8302087, a: 1}
+    colorText: {r: 0.30275232, g: 1, b: 0.9724772, a: 1}
     name: Eat
   - color: {r: 0.2581468, g: 0.6573556, b: 0.85490197, a: 1}
+    colorText: {r: 0.30275232, g: 0.7706424, b: 1, a: 1}
     name: Transportation
   - color: {r: 0.2581468, g: 0.36103565, b: 0.85490197, a: 1}
+    colorText: {r: 0.30275232, g: 0.42201823, b: 1, a: 1}
     name: Sleep
   - color: {r: 0.45157763, g: 0.2581468, b: 0.85490197, a: 1}
+    colorText: {r: 0.5275231, g: 0.30275232, b: 1, a: 1}
     name: GameDev
   - color: {r: 0.772591, g: 0.2581468, b: 0.85490197, a: 1}
+    colorText: {r: 0.9036694, g: 0.30275232, b: 1, a: 1}
     name: Art
   - color: {r: 0.85490197, g: 0.25882354, b: 0.64113593, a: 1}
+    colorText: {r: 0.85490197, g: 0.25882354, b: 0.6392157, a: 1}
     name: Music
   - color: {r: 0.559, g: 0.559, b: 0.559, a: 1}
+    colorText: {r: 0.803, g: 0.803, b: 0.803, a: 1}
     name: Misc
   eventBox: {fileID: 1873097188628004, guid: 1a86a0b60b28bee4aaa5eaf323e28eef, type: 2}
 --- !u!114 &1127150917
