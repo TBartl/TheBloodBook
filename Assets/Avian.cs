@@ -162,7 +162,12 @@ public class Avian : MonoBehaviour {
             animator.AnimateOutSpeech(new AvianSpeech(IdToText(id) + " event duraction decreased. You're not slacking, are you?", serious));
     }
     public void OnEventMoved(int id, int change) {
-        //animator.AnimateOutSpeech(new AvianSpeech(s, talk));
+        if (change == 0)
+            animator.AnimateOutSpeech(new AvianSpeech("Congratulations, you managed to move your " + IdToText(id) + " event the exact same place.", fingertapping));
+        else if (change > 0)
+            animator.AnimateOutSpeech(new AvianSpeech(IdToText(id) + " event pushed back. You're not procrastinating, are you?", serious));
+        else
+            animator.AnimateOutSpeech(new AvianSpeech(IdToText(id) + " event moved up.", talk));
     }
     public void OnAvianTouched(bool withMasterTouch = false) {
         if (withMasterTouch) {
@@ -180,6 +185,78 @@ public class Avian : MonoBehaviour {
         }
     }
     public void OnMinuteUpdated() {
+        int currentTime = (DateTime.Now.Hour - 7) * 60 + DateTime.Now.Minute;
+
+        TimeSlotData[] slots = TimeManager.S.LoadDayTimeSlots();
+
+        // No events
+        if (slots.Length == 0) {
+            animator.AnimateOutSpeech(new AvianSpeech("I'm impressed, you have absolutely nothing going on today apparently. Maybe you should add some events", fingertapping));
+            return;
+        }
+
+        string text = "";
+        bool eventJustEnded = false;
+
+        // Event Ending
+        foreach (TimeSlotData slot in slots) {
+            if (currentTime == slot.startTime + slot.duration) {
+                text = RandomText("Congratulations kid, ", "Good work, ");
+                text += "you just finished up your " + IdToText(slot.id) + " event. ";
+                eventJustEnded = true;
+
+                // Check if another event is starting
+                foreach (TimeSlotData slot2 in slots) {
+                    if (currentTime == slot2.startTime) {
+                        text += " But, it looks like you've got a " + IdToText(slot2.id) + " event up now. Hope you had a good 1 second break.";
+                        animator.AnimateOutSpeech(new AvianSpeech(text, wicked));
+                        return;
+                    }
+                }
+                
+                text += "Now ";
+            }
+        }
+
+        // Event Starting
+        foreach (TimeSlotData slot in slots) {
+            if (currentTime == slot.startTime) {
+                text = "And with that we've got a " + IdToText(slot.id) + 
+                    " event starting now scheduled to last for the next " + ColorStartOrange() + slot.duration + " minutes" + ColorEnd() + ".";
+                animator.AnimateOutSpeech(new AvianSpeech(text, talk));
+                return;
+            }
+        }
+
+        if (!eventJustEnded)
+            text += RandomText("Heads up, ", "Hey, ", "Just so you know ");
+
+        int closestEventTime = int.MaxValue;
+        TimeSlotData closestEvent = new TimeSlotData();
+        foreach (TimeSlotData slot in slots) {
+            if (currentTime > slot.startTime && currentTime < slot.startTime + slot.duration) {
+                text += "you've got " + ColorStartOrange() + (slot.startTime + slot.duration - currentTime) + ColorEnd() + " minutes left until ";
+                text += RandomText("you're done with your ", "you're finished with your");
+                text += IdToText(slot.id) + " event.";
+                animator.AnimateOutSpeech(new AvianSpeech(text, talk));
+                return;
+            }
+            int timeUntil = slot.startTime - currentTime;
+            if (timeUntil < closestEventTime) {
+                closestEventTime = timeUntil;
+                closestEvent = slot;
+            }
+        }
+        if (closestEventTime == int.MaxValue) {
+            animator.AnimateOutSpeech(new AvianSpeech("Wow it looks like you've got nothing left to do today, not even sleep. That's suspiciously impressive.", fingertapping));
+            return;
+        }
+
+        text += "you've got " + ColorStartOrange() + (closestEvent) + ColorEnd() + " minutes left until ";
+        text += RandomText("you're done with your ", "you're finished with your");
+        text += IdToText(closestEvent.id) + " event.";
+        animator.AnimateOutSpeech(new AvianSpeech(text, talk));
+        animator.AnimateOutSpeech(new AvianSpeech(text, talk));
 
     }
 

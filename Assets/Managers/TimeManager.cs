@@ -35,6 +35,7 @@ public class TimeManager : MonoBehaviour {
         DateTime now = DateTime.Now;
         if (now.Minute != lastRealTime.Minute) {
             UpdateClockTime();
+            Avian.S.OnMinuteUpdated();
         }
     }
     void UpdateClockTime() {
@@ -57,7 +58,7 @@ public class TimeManager : MonoBehaviour {
         TimeSlotData[] timeSlotData = LoadDayTimeSlots(when);
         foreach (TimeSlotData t in timeSlotData) {
             GameObject newBox = GameObject.Instantiate(EventManager.S.eventBox, timeSlotBoxHolder.transform.position, Quaternion.identity, timeSlotBoxHolder.transform);
-            //PanelBox newPanelBox = newBox.GetComponent<PanelBox>();
+
             TimeSlot tSlot = newBox.GetComponent<TimeSlot>();
             tSlot.data = t;
             
