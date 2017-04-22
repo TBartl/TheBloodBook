@@ -24,12 +24,20 @@ public class Avian : MonoBehaviour {
     public AvianAnimation wink;
     public AvianAnimation supergrin;
 
+    [HideInInspector]
+    public bool ignoreNextFocus = false;
+
     void Awake() {
         S = this;
         animator = this.GetComponent<AvianAnimator>();
     }
     
     void OnApplicationFocus(bool hasFocus) {
+        if (ignoreNextFocus) {
+            ignoreNextFocus = false;
+            return;
+        }
+
         if (hasFocus)
             OnApplicationGainedFocus();
     }

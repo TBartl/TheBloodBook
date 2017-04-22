@@ -29,6 +29,7 @@ public class SaveTODO : MonoBehaviour {
         int newCount = CountNonEmptyLines(s);
 
         Avian.S.OnTODOUpdated(lastCount, newCount);
+        Avian.S.ignoreNextFocus = true;
 
         lastCount = newCount;
         last = s;
