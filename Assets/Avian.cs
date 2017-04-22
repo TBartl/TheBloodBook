@@ -212,13 +212,13 @@ public class Avian : MonoBehaviour {
                         animator.AnimateOutSpeech(new AvianSpeech(text, wicked));
 
                         if (slot.id != 7 && slot2.id != 7) // Don't vibrate if we're sleeping
-                            Handheld.Vibrate();
+                            MakeNoise();
                         return;
                     }
                 }
 
                 if (slot.id != 7) // Don't vibrate if we're sleeping
-                    Handheld.Vibrate();
+                    MakeNoise();
                 text += "Now ";
             }
         }
@@ -230,7 +230,7 @@ public class Avian : MonoBehaviour {
                     " event starting now. It's scheduled to last for the next " + ColorStartOrange() + slot.duration + " minute" + sIfNotOne(slot.duration) + ColorEnd() + ".";
                 animator.AnimateOutSpeech(new AvianSpeech(text, talk));
                 if (slot.id != 7) // Don't vibrate if we're sleeping
-                    Handheld.Vibrate();
+                    MakeNoise();
                 return;
             }
         }
@@ -261,7 +261,7 @@ public class Avian : MonoBehaviour {
         }
 
         text += "you've got " + ColorStartOrange() + (closestEventTime) + ColorEnd() + " minute" +sIfNotOne(closestEventTime) + " left until ";
-        text += RandomText("you're done with your ", "you're finished with your");
+        text += RandomText("you start your ", "you begin your ");
         text += IdToText(closestEvent.id) + " event.";
         animator.AnimateOutSpeech(new AvianSpeech(text, talk));
 
@@ -316,5 +316,10 @@ public class Avian : MonoBehaviour {
     }
     public string RandomText(params string[] texts) {
         return texts[UnityEngine.Random.Range(0, texts.Length)];
+    }
+
+    void MakeNoise() {
+        Handheld.Vibrate();
+        SoundManager.S.Play();
     }
 }

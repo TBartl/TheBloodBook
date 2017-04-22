@@ -1983,6 +1983,8 @@ GameObject:
   - component: {fileID: 1127150916}
   - component: {fileID: 1127150917}
   - component: {fileID: 1127150918}
+  - component: {fileID: 1127150919}
+  - component: {fileID: 1127150920}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -2090,6 +2092,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelA: {fileID: 1695455420}
   panelB: {fileID: 1668304317}
+--- !u!114 &1127150919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1127150913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e75d8dc65fcae9b4b87555b860d94ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 15d562dfe4e99c845b3917f78f8dfdbc, type: 3}
+--- !u!81 &1127150920
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1127150913}
+  m_Enabled: 1
 --- !u!1 &1166353547
 GameObject:
   m_ObjectHideFlags: 0
