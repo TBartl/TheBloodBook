@@ -66,14 +66,18 @@ public class PanelBox : Selectable {
             timeSlot.SetFromRect();
             yield return null;
         }
+        bool deleted = false;
         if (currentPanel == PanelManager.S.panelA) {
             Avian.S.OnEventDeleted(timeSlot.data.id);
+            deleted = true;
             DestroyImmediate(this.gameObject);
         } else {
             this.transform.SetParent(PanelManager.S.panelB, true);
             slidingPanel = this.transform.GetComponentInParent<SlidingPanel>();
         }
         TimeManager.S.SaveDay();
+        if (deleted)
+            yield break;
         if (firstPlace) {
             Avian.S.OnEventCreated(timeSlot.data.id);
             firstPlace = false;

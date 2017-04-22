@@ -14,6 +14,7 @@ public class SetupManager : MonoBehaviour {
         Screen.autorotateToLandscapeLeft = false;
         Screen.autorotateToLandscapeRight = false;
         Screen.autorotateToPortraitUpsideDown = false;
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
         //Application.runInBackground = true;
     }
 
@@ -21,7 +22,7 @@ public class SetupManager : MonoBehaviour {
         this.hasFocus = hasFocus;
     }
 
-    bool HasFoxus() {
+    bool HasFocus() {
         return hasFocus;
     }
 }

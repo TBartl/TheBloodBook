@@ -50,10 +50,10 @@ public class Avian : MonoBehaviour {
             s += RandomText("Good Evening! ", "I hope you're having a good evening. ");
         else
             s += "Welcome Back! ";
-
-        s += "You have " + ColorStartTeal() + slots.Length.ToString() +" events" + ColorEnd() + " on your schedule today.";
-        s += " In total, you've got " + ColorStartOrange() + ToHours(totalLength) + " hours" + ColorEnd() + " of stuff to do!";
-        s += " You also have " + ColorStartGreen() + SaveTODO.S.GetTODOCount() + " items" + ColorEnd() + " on your TODO list.";
+        
+        s += "You have " + ColorStartTeal() + slots.Length.ToString() +" event" + sIfNotOne(slots.Length) + ColorEnd() + " on your schedule today.";
+        s += " In total, you've got " + ColorStartOrange() + ToHours(totalLength) + " hour" + sIfNotOne(totalLength) + ColorEnd() + " of stuff to do!";
+        s += " You also have " + ColorStartGreen() + SaveTODO.S.GetTODOCount() + " item" + sIfNotOne(SaveTODO.S.GetTODOCount()) + ColorEnd() + " on your TODO list.";
 
         animator.AnimateOutSpeech(new AvianSpeech(s, appear));
     }
@@ -96,7 +96,7 @@ public class Avian : MonoBehaviour {
             s += RandomText(" and there's less to do than there was before.", " and hey, it's a bit smaller than it was before!");
         else
             s += " and it looks like you have even more to do now!";
-        s += " You now have " + ColorStartGreen() + itemsAfter + " items" + ColorEnd() + " TODO in total.";
+        s += " You now have " + ColorStartGreen() + itemsAfter + " item" + sIfNotOne(itemsAfter) + ColorEnd() + " TODO in total.";
         animator.AnimateOutSpeech(new AvianSpeech(s, talk));
     }
 
@@ -125,14 +125,14 @@ public class Avian : MonoBehaviour {
         else
             s += "You have ";
 
-        s += ColorStartTeal() + slotsToday.Length + " events" + ColorEnd() + " for ";
+        s += ColorStartTeal() + slotsToday.Length + " event" + sIfNotOne(slotsToday.Length) + ColorEnd() + " for ";
         s += IdToText(id) + " ";
 
         if (selectedDay.Date != DateTime.Now.Date)
             s += "on that day, ";
         else
             s += "today, ";
-        s += "totalling " + ColorStartOrange() + ToHours(lengthToday) + " hours" + ColorEnd() + ". ";
+        s += "totalling " + ColorStartOrange() + ToHours(lengthToday) + " hour" + sIfNotOne(lengthToday) + ColorEnd() + ". ";
 
         if (selectedDay.Date <= DateTime.Now.Date)
             s += "The day before you had ";
@@ -141,7 +141,7 @@ public class Avian : MonoBehaviour {
         else
             s += "Yesterday you had ";
 
-        s += ColorStartOrange() + ToHours(lengthYesterday) + " hours" + ColorEnd() + ".";
+        s += ColorStartOrange() + ToHours(lengthYesterday) + " hour" + sIfNotOne(lengthYesterday) + ColorEnd() + ".";
 
         animator.AnimateOutSpeech(new AvianSpeech(s, talk));
     }
@@ -210,10 +210,15 @@ public class Avian : MonoBehaviour {
                     if (currentTime == slot2.startTime) {
                         text += " But, it looks like you've got a " + IdToText(slot2.id) + " event up now. Hope you had a good 1 second break.";
                         animator.AnimateOutSpeech(new AvianSpeech(text, wicked));
+
+                        if (slot.id != 7 && slot2.id != 7) // Don't vibrate if we're sleeping
+                            Handheld.Vibrate();
                         return;
                     }
                 }
-                
+
+                if (slot.id != 7) // Don't vibrate if we're sleeping
+                    Handheld.Vibrate();
                 text += "Now ";
             }
         }
@@ -222,8 +227,10 @@ public class Avian : MonoBehaviour {
         foreach (TimeSlotData slot in slots) {
             if (currentTime == slot.startTime) {
                 text = "And with that we've got a " + IdToText(slot.id) + 
-                    " event starting now scheduled to last for the next " + ColorStartOrange() + slot.duration + " minutes" + ColorEnd() + ".";
+                    " event starting now. It's scheduled to last for the next " + ColorStartOrange() + slot.duration + " minute" + sIfNotOne(slot.duration) + ColorEnd() + ".";
                 animator.AnimateOutSpeech(new AvianSpeech(text, talk));
+                if (slot.id != 7) // Don't vibrate if we're sleeping
+                    Handheld.Vibrate();
                 return;
             }
         }
@@ -235,14 +242,15 @@ public class Avian : MonoBehaviour {
         TimeSlotData closestEvent = new TimeSlotData();
         foreach (TimeSlotData slot in slots) {
             if (currentTime > slot.startTime && currentTime < slot.startTime + slot.duration) {
-                text += "you've got " + ColorStartOrange() + (slot.startTime + slot.duration - currentTime) + ColorEnd() + " minutes left until ";
-                text += RandomText("you're done with your ", "you're finished with your");
+                int timeToNext = slot.startTime + slot.duration - currentTime;
+                text += "you've got " + ColorStartOrange() + (timeToNext) + " minute" + sIfNotOne(timeToNext)  + ColorEnd() + " left until ";
+                text += RandomText("you're done with your ", "you're finished with your ");
                 text += IdToText(slot.id) + " event.";
                 animator.AnimateOutSpeech(new AvianSpeech(text, talk));
                 return;
             }
             int timeUntil = slot.startTime - currentTime;
-            if (timeUntil < closestEventTime) {
+            if (timeUntil < closestEventTime && timeUntil > 0) {
                 closestEventTime = timeUntil;
                 closestEvent = slot;
             }
@@ -252,10 +260,9 @@ public class Avian : MonoBehaviour {
             return;
         }
 
-        text += "you've got " + ColorStartOrange() + (closestEvent) + ColorEnd() + " minutes left until ";
+        text += "you've got " + ColorStartOrange() + (closestEventTime) + ColorEnd() + " minute" +sIfNotOne(closestEventTime) + " left until ";
         text += RandomText("you're done with your ", "you're finished with your");
         text += IdToText(closestEvent.id) + " event.";
-        animator.AnimateOutSpeech(new AvianSpeech(text, talk));
         animator.AnimateOutSpeech(new AvianSpeech(text, talk));
 
     }
@@ -294,6 +301,11 @@ public class Avian : MonoBehaviour {
     }
     public string IdToText(int id) {
         return ColorAny(EventManager.S.events[id].colorText) + EventManager.S.events[id].name + ColorEnd();
+    }
+    public string sIfNotOne(int i) {
+        if (i == 1)
+            return "";
+        return "s";
     }
 
     public string ColorEnd() {
