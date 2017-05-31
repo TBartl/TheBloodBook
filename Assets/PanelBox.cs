@@ -121,4 +121,7 @@ public class PanelBox : Selectable {
         Avian.S.OnEventResized(timeSlot.data.id, timeSlot.data.duration - originalSize);
     }
 
+    public void SetNotFirstPlace() {
+        firstPlace = false;
+    }
 }

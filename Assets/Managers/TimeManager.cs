@@ -58,9 +58,9 @@ public class TimeManager : MonoBehaviour {
         TimeSlotData[] timeSlotData = LoadDayTimeSlots(when);
         foreach (TimeSlotData t in timeSlotData) {
             GameObject newBox = GameObject.Instantiate(EventManager.S.eventBox, timeSlotBoxHolder.transform.position, Quaternion.identity, timeSlotBoxHolder.transform);
-
             TimeSlot tSlot = newBox.GetComponent<TimeSlot>();
             tSlot.data = t;
+            newBox.GetComponent<PanelBox>().SetNotFirstPlace();
             
         }
         selectedDay = when;
