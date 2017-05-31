@@ -78,7 +78,7 @@ MonoBehaviour:
   data:
     id: 0
     duration: 30
-    startTime: 0
+    startTime: -1
   printDurationWithTitle: 1
 --- !u!114 &114268909421834398
 MonoBehaviour:
