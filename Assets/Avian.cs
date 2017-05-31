@@ -77,7 +77,7 @@ public class Avian : MonoBehaviour {
     }
 
     public void OnMasterButton() {
-        animator.AnimateOutSpeech(new AvianSpeech("Master button pressed.", wicked));
+        animator.AnimateOutSpeech(new AvianSpeech("Master button pressed. Press to reload template, hold to move to save template.", wicked));
     }
     public void OnMasterButtonFizzled() {
         animator.AnimateOutSpeech(new AvianSpeech("Master button fizzled out. Great going kid.", fingertapping));
@@ -88,7 +88,9 @@ public class Avian : MonoBehaviour {
     }
     public void OnBackDay() {
         animator.AnimateOutSpeech(new AvianSpeech(RandomText("Set back one day!", "Day Devanced...\n I think that's a word."), pointandtalk));
-    }    public void OnSavedTemplate() {
+    }
+
+    public void OnSavedTemplate() {
         string dayOfWeek = DateTime.Now.DayOfWeek.ToString();
         animator.AnimateOutSpeech(new AvianSpeech(
             "Template saved! You're future " + ColorStartPink() + dayOfWeek + "s" + ColorEnd() + " will start with these events.", talk));
@@ -112,19 +114,23 @@ public class Avian : MonoBehaviour {
         DateTime selectedDay = TimeManager.S.GetSelectedDay();
         TimeSlotData[] slotsToday = TimeManager.S.LoadDayTimeSlots(selectedDay);
         int lengthToday = 0;
+        int slotCountToday = 0;
         foreach (TimeSlotData slot in slotsToday) {
-            lengthToday += slot.duration;
+            if (slot.id == id) {
+                slotCountToday += 1;
+                lengthToday += slot.duration;
+            }
         }
         DateTime yesterday = selectedDay;
         yesterday.AddDays(-1);
         TimeSlotData[] slotsYesterday = TimeManager.S.LoadDayTimeSlots(yesterday);
         int lengthYesterday = 0;
         foreach (TimeSlotData slot in slotsYesterday) {
-            lengthYesterday += slot.duration;
+            if (slot.id == id)
+                lengthYesterday += slot.duration;
         }
 
-
-        // "You have 12 events for Game Dev today, totalling 3 hours. This is more than the 2 hours you had yesterday.
+        
         string s = "";
         if (selectedDay.Date <= DateTime.Now.Date)
             s += "You had ";
@@ -133,7 +139,7 @@ public class Avian : MonoBehaviour {
         else
             s += "You have ";
 
-        s += ColorStartTeal() + slotsToday.Length + " event" + sIfNotOne(slotsToday.Length) + ColorEnd() + " for ";
+        s += ColorStartTeal() + slotCountToday + " event" + sIfNotOne(slotCountToday) + ColorEnd() + " for ";
         s += IdToText(id) + " ";
 
         if (selectedDay.Date != DateTime.Now.Date)
@@ -158,24 +164,40 @@ public class Avian : MonoBehaviour {
         animator.AnimateOutSpeech(new AvianSpeech(s, talk));
     }
     public void OnEventDeleted(int id) {
-        string s = IdToText(id) + " event deleted. Hey you're not procrastinating something, are you?";
+        string s = IdToText(id) + RandomText(
+            " event deleted.",
+            " event deleted...",
+            " event deleted. Hey you're not procrastinating something, are you?");
         animator.AnimateOutSpeech(new AvianSpeech(s, serious));
     }
     public void OnEventResized(int id, int change) {
         if (change == 0)
             animator.AnimateOutSpeech(new AvianSpeech("Congratulations, you managed to resize your " + IdToText(id) + " event the exact same duration.", fingertapping));
         else if (change > 0)
-            animator.AnimateOutSpeech(new AvianSpeech(IdToText(id) + " event duraction increased, look at you Mr. Productive.", talk));
+            animator.AnimateOutSpeech(new AvianSpeech(IdToText(id) + RandomText(
+                " event duraction increased.",
+                " event duraction increased.",
+                " event duraction increased, look at you Mr. Productive."
+                ), talk));
         else
             animator.AnimateOutSpeech(new AvianSpeech(IdToText(id) + " event duraction decreased. You're not slacking, are you?", serious));
     }
     public void OnEventMoved(int id, int change) {
         if (change == 0)
             animator.AnimateOutSpeech(new AvianSpeech("Congratulations, you managed to move your " + IdToText(id) + " event the exact same place.", fingertapping));
-        else if (change > 0)
-            animator.AnimateOutSpeech(new AvianSpeech(IdToText(id) + " event pushed back. You're not procrastinating, are you?", serious));
-        else
-            animator.AnimateOutSpeech(new AvianSpeech(IdToText(id) + " event moved up.", talk));
+        else if (change > 0) {
+                animator.AnimateOutSpeech(new AvianSpeech(IdToText(id) + RandomText(
+                    " event pushed back. You're not procrastinating, are you?",
+                    " event pushed back...",
+                    " event pushed back."
+                    ), serious));
+        }
+        else {
+            if (UnityEngine.Random.value <= .5f)
+                animator.AnimateOutSpeech(new AvianSpeech(IdToText(id) + " event moved up.", talk));
+            else
+                animator.AnimateOutSpeech(new AvianSpeech(IdToText(id) + " event brought up.", talk));
+        }
     }
     public void OnAvianTouched(bool withMasterTouch = false) {
         if (withMasterTouch) {
@@ -209,7 +231,7 @@ public class Avian : MonoBehaviour {
         // Event Ending
         foreach (TimeSlotData slot in slots) {
             if (currentTime == slot.startTime + slot.duration) {
-                text = RandomText("Congratulations kid, ", "Good work, ");
+                text = RandomText("Congratulations kid, ", "Good work, ", "Great job, ");
                 text += "you just finished up your " + IdToText(slot.id) + " event. ";
                 eventJustEnded = true;
 

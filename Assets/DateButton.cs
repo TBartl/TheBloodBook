@@ -9,7 +9,7 @@ using UnityEngine.EventSystems;
 public class DateButton : Selectable {
 
     float holdTime = .4f;
-    float resetTime = 2f;
+    float resetTime = 6f;
     bool alreadyGoing = false;
 
     bool thisPressed = false;
