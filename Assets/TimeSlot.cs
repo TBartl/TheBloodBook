@@ -24,9 +24,9 @@ public class TimeSlot : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        if (data.startTime == -1) {
-            SetFromRect();
-        }
+        //if (data.startTime == 0) {
+        //    SetFromRect();
+        //}
         if (data.startTime != -1) {
             UpdateSize();
             UpdatePos();
